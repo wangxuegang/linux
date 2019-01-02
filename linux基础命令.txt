@@ -27,3 +27,6 @@ zip test1.zip test1.txt
 
 ##zip解压
 unzip test1.zip
+
+##关机
+shutdown -h now
