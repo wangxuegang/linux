@@ -1,0 +1,29 @@
+##创建目录
+mkdir test1
+##删除空目录
+rmdir test1 
+##删除非空目录
+rm -f test1
+##创建文件
+
+
+vi test.txt
+#输入内容
+wangxuegang
+#写入
+:w
+#退出
+:q
+
+
+##tar压缩目录
+tar -zcvf test1.tar.gz test1
+
+##tar解缩目录
+tar -zxvf test.tar.gz
+
+##zip压缩文件或目录
+zip test1.zip test1.txt
+
+##zip解压
+unzip test1.zip
