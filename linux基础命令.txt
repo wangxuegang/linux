@@ -66,5 +66,12 @@ sudo passwd ******
 ##删除用户
 sudo userdel -r wangxuegang
 
+#安装命令 yun(自动安装) 和 rmp （手动安装，不会处理依赖关系）
+yun -y install epel-release
+
+#卸载命令 
+yun -y remove epel-release
+
 ##安装jdk,centos7自带openjdk,删除，下载java jdk
+
 
