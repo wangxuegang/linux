@@ -77,3 +77,18 @@ yum list installed | grep epel-release
 
 ##查看linux内核版本
 uname -r
+
+##查找文件或目录
+find / -name wangxuegang.txt
+find / -name wangxuegang
+
+##内容查询
+grep -i hello wangxuegang.txt
+
+##查看文件
+cat wangxuegang.txt
+tac wangxuegang.txt
+
+##查看实时文档，如日志文件
+tail -f wangxuegang.txt
+
