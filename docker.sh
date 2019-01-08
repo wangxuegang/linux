@@ -45,4 +45,18 @@ docker stop ******
 ##删除指定
 docker rm ******
 
+##搜索镜像
+docker search ******
+
+##查看容器地址
+docker exec -it ****** /bin/bash
+
+##路径
+pwd
+
+##将war包拷贝容器Tomcat webapps目录下
+docker cp wangxuegang.war *******/pwd/webapps
+
+
+
 
