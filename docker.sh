@@ -17,10 +17,32 @@ passwd ******
 docker run hello-world
 
 ##创建镜像
-docker pull wangxuegang
+docker pull nginx
 
 ##查看docker镜像
 docker image ls
 
 ##docker心得：
 docker相当于一个应用，在该应用中可以获取多个镜像，在容器里实例化，类似VmWare应用
+
+
+
+##创建tomcat镜像
+docker pull tomcat
+
+##查看镜像
+docker image ls 
+
+##启动tomcat服务器
+docker run -d -p 16000:8080 tomcat
+
+##查看当前执行的容器
+docker ps -a
+
+##停止指定id容器
+docker stop ******
+
+##删除指定
+docker rm ******
+
+
