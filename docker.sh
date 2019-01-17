@@ -57,6 +57,37 @@ pwd
 ##将war包拷贝容器Tomcat webapps目录下
 docker cp wangxuegang.war *******/pwd/webapps
 
+##在docker中安装zookeeper镜像
+docker pull zookeeper
+
+##查看镜像
+docker image ls
+
+##启动zookeeper容器
+docker run -t --name zookeeper zookeeper
+
+##查看容器
+docker ps -a
+
+##停止容器 id
+docker stop ******
+
+##删除容器 id
+docker rm ******
+
+## id进入容器，配置zookeeper
+docker exec -it ****** /bin/bash
+
+vi /conf/zoo.cfg
+  #添加server.1 = 127.0.0.1:2888:3888
+
+##开放端口号
+firewall-cmd --zone=public --add-port=2181/tcp --permanent
+firewall-cmd --zone=public --add-port=2888/tcp --permanent
+firewall-cmd --zone=public --add-port=3888/tcp --permanent
+
+#重启防火墙
+firewall-cmd --reload
 
 
 
