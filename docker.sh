@@ -89,5 +89,19 @@ firewall-cmd --zone=public --add-port=3888/tcp --permanent
 #重启防火墙
 firewall-cmd --reload
 
+##查看开放端口是否生效
+firewall-cmd --zone=public --query-port=2181/tcp
+
+##查看当前系统打开的所有端口
+firewall-cmd --zone=public --list-ports
+
+##查看端口号
+netstat -anp | grep 2181
+
+##查看所有端口号使用情况
+netstat -ntlp
+
+##查看当前进程
+ps -ef | grep zookeeper
 
 
