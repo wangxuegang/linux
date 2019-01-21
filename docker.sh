@@ -64,7 +64,7 @@ docker pull zookeeper
 docker image ls
 
 ##启动zookeeper容器
-docker run -t --name zookeeper zookeeper
+docker run -d -p 16000:2181 zookeeper
 
 ##查看容器
 docker ps -a
