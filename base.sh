@@ -61,7 +61,8 @@ groups
 sudo adduser wangxuegang
 
 ##用户设置密码
-sudo passwd ******
+sudo passwd wangxuegang
+#提示：输入密码、重复密码
 
 ##删除用户
 sudo userdel -r wangxuegang
