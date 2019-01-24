@@ -104,4 +104,8 @@ netstat -ntlp
 ##查看当前进程
 ps -ef | grep zookeeper
 
+##下载rabbitmq镜像
+docker pull rabbitmq:3.7.7-management
 
+##运行rabbitmq容器
+docker run -d --name rabbitmq3.7.7 -p 5672:5672 -p 15672:15672 -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin rabbitmq:3.7.7-management
