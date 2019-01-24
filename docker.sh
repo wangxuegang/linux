@@ -109,3 +109,10 @@ docker pull rabbitmq:3.7.7-management
 
 ##运行rabbitmq容器
 docker run -d --name rabbitmq3.7.7 -p 5672:5672 -p 15672:15672 -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin rabbitmq:3.7.7-management
+
+##安装redis镜像
+docker pull redis
+
+##运行redis容器
+docker run -d -p 6379:6379 redis
+
