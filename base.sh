@@ -1,5 +1,17 @@
 Ps(#：符号 管理员  $：符号 普通用户)
 
+##修改ip配置
+vi /etc/sysconfig/network-scripts/ifcfg-ens33
+
+BOOTPROTO="static"
+ONBOOT="yes"
+IPADDR=192.168.245.128
+GATEWAY=192.168.1.1
+DNS1=114.114.114.114
+
+##系统网络重启
+systemctl restart network
+
 ##创建目录
 mkdir test1
 ##删除空目录
