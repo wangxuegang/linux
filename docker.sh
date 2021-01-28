@@ -116,3 +116,8 @@ docker pull redis
 ##运行redis容器
 docker run -d -p 6379:6379 redis
 
+##查看liunx磁盘使用情况
+df -h
+
+##查看文件大小
+du -h --max-depth=1
